@@ -2,6 +2,14 @@ package bfiller.chess.models;
 
 public enum Color {
 
-	WHITE,
-	BLACK
+	WHITE{
+		public String toString() {
+			return "Light";
+		}
+	},
+	BLACK{
+		public String toString() {
+			return "Dark";
+		}
+	}
 }
